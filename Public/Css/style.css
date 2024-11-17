@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+}
+.calculator{
+    color: #FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.history{
+
+    top: 20px;right: 150px;
+}
+.icon{
+    margin-left:90px ;
+    background: #444;
+    color: #2196f3;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.content{
+    display: none;
+    background: #e4e3e3;
+    width: 500px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.screen{
+    background:rgba(68, 68, 68,0.6);
+    width: 600px;
+    height: 70px;
+    margin:20px 0px ;
+    color: #FFFF;
+}
+.buttons{
+    display: flex; 
+}
+.buttons span:hover{
+    cursor: pointer;
+}
+.numbers{
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 30px;
+}
+.numbers span{
+    text-align: center;
+    background-color: #2196f3;
+    border: solid 3px #0960a7;
+    padding: 20px;
+}
+.numbers .equal{
+    background-color: chocolate;
+    border: solid 3px rgb(203, 89, 8);
+    grid-column: 1/4;
+}
+.operators{
+    margin-left: 30px;
+    display:grid;
+    grid-template-columns: 80px ;
+    grid-gap: 30px;
+}
+.operators span{
+    text-align: center;
+    padding: 20px;
+    background-color: #f44336;
+    border: solid 3px  #e30f00;
+}
+.operators .arrow{
+    background-color: #444;
+}
+.advanced{
+    display: none; /* grid */
+    margin-left:50px;
+    grid-template-columns: 80px;
+    gap:30px
+}
+.advanced span{
+    background-color: orange;
+    border: solid 3px  #e30f00;
+    padding: 20px;
+    text-align: center;
+}
+#delete{
+    background-color:#444;
+}
