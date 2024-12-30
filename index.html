@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="calculator">
+            <input class="screen" id="screen" readonly></input>
+            <div class="buttons">
+                <div class="numbers">
+                    <span onclick="Calculator.write_text('1')">1</span>
+                    <span onclick="Calculator.write_text('2')">2</span>
+                    <span onclick="Calculator.write_text('3')">3</span>
+                    <span onclick="Calculator.write_text('4')">4</span>
+                    <span onclick="Calculator.write_text('5')">5</span>
+                    <span onclick="Calculator.write_text('6')">6</span>
+                    <span onclick="Calculator.write_text('7')">7</span>
+                    <span onclick="Calculator.write_text('8')">8</span>
+                    <span onclick="Calculator.write_text('9')">9</span>
+                    <span onclick="Calculator.write_text('0')">0</span>
+                    <span onclick="Calculator.write_text('.')">.</span>
+                    <span id="delete" onclick="Calculator.delete()"><i class="fa-solid fa-eraser"></i></span>
+                    <span onclick="Calculator.click_equal()" class="equal" id="equal">=</span>
+                </div>
+    
+                <div class="operators">
+                    <span onclick="Calculator.click_operator('+')">+</span>
+                    <span onclick="Calculator.click_operator('-')">-</span>
+                    <span onclick="Calculator.click_operator('X')">X</span>
+                    <span onclick="Calculator.click_operator('/')">/</span>
+                    <span class="arrow" id="arrow"><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+    
+                <div class="advanced">
+                    <span onclick="Calculator.click_operator('sin')">sin</span>
+                    <span onclick="Calculator.click_operator('cos')">cos</span>
+                    <span onclick="Calculator.click_operator('tan')">tan</span>
+                    <span onclick="Calculator.click_operator('^')">^</span>
+                    <span onclick="Calculator.click_operator('!')">!</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="history">
+            <hr>
+            <div class="icon" id="icon" onclick="History.show()"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <ul class="content"></ul>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
